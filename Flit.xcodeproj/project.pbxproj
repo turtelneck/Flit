@@ -7,16 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		493028FE2C599C5C00D84B2C /* Flit - Hartford, CT.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 493028FD2C599C5C00D84B2C /* Flit - Hartford, CT.gpx */; };
+		493029002C5C26A800D84B2C /* Flit - Makati, Manila, Phillipines.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 493028FF2C5C26A800D84B2C /* Flit - Makati, Manila, Phillipines.gpx */; };
+		493029032C5E6C9200D84B2C /* Flit - St. Petersburg, Russia.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 493029022C5E6C9200D84B2C /* Flit - St. Petersburg, Russia.gpx */; };
+		493029052C5FA7B600D84B2C /* Flit - Brno, Czechia.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 493029042C5FA7B600D84B2C /* Flit - Brno, Czechia.gpx */; };
+		493029072C631E3A00D84B2C /* Flit - Stockholm, Sweden.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 493029062C631E3A00D84B2C /* Flit - Stockholm, Sweden.gpx */; };
+		493029092C655BAA00D84B2C /* Flit - Milan, Italy.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 493029082C655BAA00D84B2C /* Flit - Milan, Italy.gpx */; };
+		4930290B2C698A5100D84B2C /* Flit - Bucharest, Romania.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4930290A2C698A5100D84B2C /* Flit - Bucharest, Romania.gpx */; };
+		4930290D2C6AF78700D84B2C /* Flit - Wellington, NZ.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4930290C2C6AF78700D84B2C /* Flit - Wellington, NZ.gpx */; };
+		493489682C6D92F300F2B84B /* Flit - Istanbul, Turkey.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 493489672C6D92F300F2B84B /* Flit - Istanbul, Turkey.gpx */; };
+		49823AF12C50C52200EF369B /* Flit - Rio de Janeiro, Brazil.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 49823AF02C50C52200EF369B /* Flit - Rio de Janeiro, Brazil.gpx */; };
+		49823AF32C527D6A00EF369B /* Flit - Syracuse, NY.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 49823AF22C527D6A00EF369B /* Flit - Syracuse, NY.gpx */; };
+		49823AF52C53108000EF369B /* Flit - Philadelphia, PA.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 49823AF42C53108000EF369B /* Flit - Philadelphia, PA.gpx */; };
+		49823AF72C551E9500EF369B /* Flit - Mumbai, India.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 49823AF62C551E9500EF369B /* Flit - Mumbai, India.gpx */; };
 		49892A172C5053DD0029ED41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49892A162C5053DD0029ED41 /* AppDelegate.swift */; };
 		49892A192C5053DD0029ED41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49892A182C5053DD0029ED41 /* SceneDelegate.swift */; };
 		49892A1B2C5053DD0029ED41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49892A1A2C5053DD0029ED41 /* ViewController.swift */; };
 		49892A1E2C5053DD0029ED41 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 49892A1D2C5053DD0029ED41 /* Base */; };
 		49892A202C5053DE0029ED41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49892A1F2C5053DE0029ED41 /* Assets.xcassets */; };
 		49892A232C5053DE0029ED41 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 49892A222C5053DE0029ED41 /* Base */; };
+		49892A2B2C5054110029ED41 /* Flit - Portsmouth, NH.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 49892A2A2C5054110029ED41 /* Flit - Portsmouth, NH.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49892A132C5053DD0029ED41 /* GPesz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPesz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		493028FD2C599C5C00D84B2C /* Flit - Hartford, CT.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Hartford, CT.gpx"; sourceTree = "<group>"; };
+		493028FF2C5C26A800D84B2C /* Flit - Makati, Manila, Phillipines.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Makati, Manila, Phillipines.gpx"; sourceTree = "<group>"; };
+		493029022C5E6C9200D84B2C /* Flit - St. Petersburg, Russia.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - St. Petersburg, Russia.gpx"; sourceTree = "<group>"; };
+		493029042C5FA7B600D84B2C /* Flit - Brno, Czechia.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Brno, Czechia.gpx"; sourceTree = "<group>"; };
+		493029062C631E3A00D84B2C /* Flit - Stockholm, Sweden.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Stockholm, Sweden.gpx"; sourceTree = "<group>"; };
+		493029082C655BAA00D84B2C /* Flit - Milan, Italy.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Milan, Italy.gpx"; sourceTree = "<group>"; };
+		4930290A2C698A5100D84B2C /* Flit - Bucharest, Romania.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Bucharest, Romania.gpx"; sourceTree = "<group>"; };
+		4930290C2C6AF78700D84B2C /* Flit - Wellington, NZ.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Wellington, NZ.gpx"; sourceTree = "<group>"; };
+		493489672C6D92F300F2B84B /* Flit - Istanbul, Turkey.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Istanbul, Turkey.gpx"; sourceTree = "<group>"; };
+		49823AF02C50C52200EF369B /* Flit - Rio de Janeiro, Brazil.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Rio de Janeiro, Brazil.gpx"; sourceTree = "<group>"; };
+		49823AF22C527D6A00EF369B /* Flit - Syracuse, NY.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Syracuse, NY.gpx"; sourceTree = "<group>"; };
+		49823AF42C53108000EF369B /* Flit - Philadelphia, PA.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Philadelphia, PA.gpx"; sourceTree = "<group>"; };
+		49823AF62C551E9500EF369B /* Flit - Mumbai, India.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Mumbai, India.gpx"; sourceTree = "<group>"; };
+		49892A132C5053DD0029ED41 /* Flit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49892A162C5053DD0029ED41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49892A182C5053DD0029ED41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		49892A1A2C5053DD0029ED41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +51,7 @@
 		49892A1F2C5053DE0029ED41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49892A222C5053DE0029ED41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49892A242C5053DE0029ED41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49892A2A2C5054110029ED41 /* Flit - Portsmouth, NH.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Portsmouth, NH.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		493029012C5D589500D84B2C /* GPX Files */ = {
+			isa = PBXGroup;
+			children = (
+				493029082C655BAA00D84B2C /* Flit - Milan, Italy.gpx */,
+				4930290A2C698A5100D84B2C /* Flit - Bucharest, Romania.gpx */,
+				4930290C2C6AF78700D84B2C /* Flit - Wellington, NZ.gpx */,
+				493029042C5FA7B600D84B2C /* Flit - Brno, Czechia.gpx */,
+				493029062C631E3A00D84B2C /* Flit - Stockholm, Sweden.gpx */,
+				493489672C6D92F300F2B84B /* Flit - Istanbul, Turkey.gpx */,
+				493029022C5E6C9200D84B2C /* Flit - St. Petersburg, Russia.gpx */,
+				493028FD2C599C5C00D84B2C /* Flit - Hartford, CT.gpx */,
+				493028FF2C5C26A800D84B2C /* Flit - Makati, Manila, Phillipines.gpx */,
+				49823AF62C551E9500EF369B /* Flit - Mumbai, India.gpx */,
+				49892A2A2C5054110029ED41 /* Flit - Portsmouth, NH.gpx */,
+				49823AF02C50C52200EF369B /* Flit - Rio de Janeiro, Brazil.gpx */,
+				49823AF22C527D6A00EF369B /* Flit - Syracuse, NY.gpx */,
+				49823AF42C53108000EF369B /* Flit - Philadelphia, PA.gpx */,
+			);
+			path = "GPX Files";
+			sourceTree = "<group>";
+		};
 		49892A0A2C5053DD0029ED41 = {
 			isa = PBXGroup;
 			children = (
-				49892A152C5053DD0029ED41 /* GPesz */,
+				49892A152C5053DD0029ED41 /* Flit */,
 				49892A142C5053DD0029ED41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,14 +97,15 @@
 		49892A142C5053DD0029ED41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49892A132C5053DD0029ED41 /* GPesz.app */,
+				49892A132C5053DD0029ED41 /* Flit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		49892A152C5053DD0029ED41 /* GPesz */ = {
+		49892A152C5053DD0029ED41 /* Flit */ = {
 			isa = PBXGroup;
 			children = (
+				493029012C5D589500D84B2C /* GPX Files */,
 				49892A162C5053DD0029ED41 /* AppDelegate.swift */,
 				49892A182C5053DD0029ED41 /* SceneDelegate.swift */,
 				49892A1A2C5053DD0029ED41 /* ViewController.swift */,
@@ -64,15 +114,15 @@
 				49892A212C5053DE0029ED41 /* LaunchScreen.storyboard */,
 				49892A242C5053DE0029ED41 /* Info.plist */,
 			);
-			path = GPesz;
+			path = Flit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		49892A122C5053DD0029ED41 /* GPesz */ = {
+		49892A122C5053DD0029ED41 /* Flit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49892A272C5053DE0029ED41 /* Build configuration list for PBXNativeTarget "GPesz" */;
+			buildConfigurationList = 49892A272C5053DE0029ED41 /* Build configuration list for PBXNativeTarget "Flit" */;
 			buildPhases = (
 				49892A0F2C5053DD0029ED41 /* Sources */,
 				49892A102C5053DD0029ED41 /* Frameworks */,
@@ -82,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = GPesz;
+			name = Flit;
 			productName = GPesz;
-			productReference = 49892A132C5053DD0029ED41 /* GPesz.app */;
+			productReference = 49892A132C5053DD0029ED41 /* Flit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 49892A0E2C5053DD0029ED41 /* Build configuration list for PBXProject "GPesz" */;
+			buildConfigurationList = 49892A0E2C5053DD0029ED41 /* Build configuration list for PBXProject "Flit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				49892A122C5053DD0029ED41 /* GPesz */,
+				49892A122C5053DD0029ED41 /* Flit */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +175,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493029092C655BAA00D84B2C /* Flit - Milan, Italy.gpx in Resources */,
+				4930290B2C698A5100D84B2C /* Flit - Bucharest, Romania.gpx in Resources */,
+				493489682C6D92F300F2B84B /* Flit - Istanbul, Turkey.gpx in Resources */,
+				49892A2B2C5054110029ED41 /* Flit - Portsmouth, NH.gpx in Resources */,
 				49892A202C5053DE0029ED41 /* Assets.xcassets in Resources */,
+				49823AF72C551E9500EF369B /* Flit - Mumbai, India.gpx in Resources */,
+				49823AF32C527D6A00EF369B /* Flit - Syracuse, NY.gpx in Resources */,
+				49823AF12C50C52200EF369B /* Flit - Rio de Janeiro, Brazil.gpx in Resources */,
 				49892A232C5053DE0029ED41 /* Base in Resources */,
 				49892A1E2C5053DD0029ED41 /* Base in Resources */,
+				4930290D2C6AF78700D84B2C /* Flit - Wellington, NZ.gpx in Resources */,
+				493029072C631E3A00D84B2C /* Flit - Stockholm, Sweden.gpx in Resources */,
+				493029032C5E6C9200D84B2C /* Flit - St. Petersburg, Russia.gpx in Resources */,
+				493028FE2C599C5C00D84B2C /* Flit - Hartford, CT.gpx in Resources */,
+				493029052C5FA7B600D84B2C /* Flit - Brno, Czechia.gpx in Resources */,
+				49823AF52C53108000EF369B /* Flit - Philadelphia, PA.gpx in Resources */,
+				493029002C5C26A800D84B2C /* Flit - Makati, Manila, Phillipines.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +356,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7AAH5V5L5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GPesz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Flit;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,8 +385,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N7AAH5V5L5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GPesz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Flit;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,7 +410,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		49892A0E2C5053DD0029ED41 /* Build configuration list for PBXProject "GPesz" */ = {
+		49892A0E2C5053DD0029ED41 /* Build configuration list for PBXProject "Flit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49892A252C5053DE0029ED41 /* Debug */,
@@ -351,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49892A272C5053DE0029ED41 /* Build configuration list for PBXNativeTarget "GPesz" */ = {
+		49892A272C5053DE0029ED41 /* Build configuration list for PBXNativeTarget "Flit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				49892A282C5053DE0029ED41 /* Debug */,

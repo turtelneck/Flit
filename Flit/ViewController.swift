@@ -12,6 +12,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     let cityAndCountryCodeLabel = UILabel()
+    let gpsLocationLabel = UILabel()
     let gloatingLabel = UILabel()
 
     override func viewDidLoad() {
@@ -27,6 +28,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         cityAndCountryCodeLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(cityAndCountryCodeLabel)
         
+        // set up gpsLocationLabel
+        gpsLocationLabel.textAlignment = .center
+        gpsLocationLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(gpsLocationLabel)
+        
         // set up gloatingLabel
         gloatingLabel.textAlignment = .center
         gloatingLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -38,7 +44,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             cityAndCountryCodeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             cityAndCountryCodeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             
-            gloatingLabel.topAnchor.constraint(equalTo: cityAndCountryCodeLabel.bottomAnchor, constant: 20),
+            gpsLocationLabel.topAnchor.constraint(equalTo: cityAndCountryCodeLabel.bottomAnchor, constant: 20),
+            gpsLocationLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            gpsLocationLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            
+            gloatingLabel.topAnchor.constraint(equalTo: gpsLocationLabel.bottomAnchor, constant: 20),
             gloatingLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             gloatingLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
@@ -50,6 +60,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             attributedText.addAttribute(.font, value: UIFont.italicSystemFont(ofSize: gloatingLabel.font.pointSize), range: nsRange)
         }
         gloatingLabel.attributedText = attributedText
+        
+        gpsLocationLabel.text = "Hi, I'm here"
     }
     
     

@@ -358,7 +358,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7AAH5V5L5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GPesz/Info.plist;
+				INFOPLIST_FILE = Flit/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Flit;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -370,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Rhodri.GPesz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rhodri.Flit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -387,7 +387,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N7AAH5V5L5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GPesz/Info.plist;
+				INFOPLIST_FILE = Flit/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Flit;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -399,7 +399,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Rhodri.GPesz;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Rhodri.Flit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

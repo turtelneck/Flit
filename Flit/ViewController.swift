@@ -39,37 +39,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // set up gpsLatitudeLabel
         gpsLatitudeLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsLatitudeLabel)
-        gpsLatitudeLabel.text = "Latitude: 000000000000"
         
         // set up gpsLongitudeLabel
         gpsLongitudeLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsLongitudeLabel)
-        gpsLongitudeLabel.text = "Longitude: 000000000000"
         
         // set up gpsTimeStampLabel
         gpsTimeStampLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsTimeStampLabel)
-        gpsTimeStampLabel.text = "Updated: arstneio"
         
         // set up gpsRadiusOfUncertaintyHorizontalLabel
         gpsRadiusOfUncertaintyHorizontalLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsRadiusOfUncertaintyHorizontalLabel)
-        gpsRadiusOfUncertaintyHorizontalLabel.text = "Uncertainty (H): arstneio"
         
         // set up gpsRadiusOfUncertaintyVerticalLabel
         gpsRadiusOfUncertaintyVerticalLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsRadiusOfUncertaintyVerticalLabel)
-        gpsRadiusOfUncertaintyVerticalLabel.text = "Uncertainty (V): arstneio"
         
         // set up gpsAltitudeLabel
         gpsAltitudeLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsAltitudeLabel)
-        gpsAltitudeLabel.text = "Altitude(m): some Meters"
         
         // set up gpsLogicalFloorOfBuildingLabel
         gpsLogicalFloorOfBuildingLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsLogicalFloorOfBuildingLabel)
-        gpsLogicalFloorOfBuildingLabel.text = "Logical Floor: 34"
         
         // set up gloatingLabel
         gloatingLabel.textAlignment = .center
@@ -139,16 +132,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 let isoCountryCode = "\(placemark.isoCountryCode ?? "unknown country")"
                 
                 // prep info for gps labels
-                let gpsLatitude = placemark.location?.coordinate.latitude
-                let gpsLongitude = placemark.location?.coordinate.longitude
-                let gpsTimeStamp = placemark.location?.timestamp
-                let gpsAltitude = placemark.location?.altitude
-                let gpsRadiusOfUncertaintyVertical = placemark.location?.verticalAccuracy
-                let gpsRadiusOfUncertaintyHorizontal = placemark.location?.horizontalAccuracy
-                let gpsLogicalFloorOfBuilding = placemark.location?.floor
+                let gpsLatitude = placemark.location?.coordinate.latitude ?? 000000
+                let gpsLongitude = placemark.location?.coordinate.longitude ?? 0000000
+                let gpsTimeStamp = placemark.location?.timestamp ?? Date(timeIntervalSince1970: 0)
+                let gpsRadiusOfUncertaintyHorizontal = placemark.location?.horizontalAccuracy ?? 000000
+                let gpsRadiusOfUncertaintyVertical = placemark.location?.verticalAccuracy ?? 000000
+                let gpsAltitude = placemark.location?.altitude ?? 000000
+                let gpsLogicalFloorOfBuilding = placemark.location?.floor ?? CLFloor()
                 
                 DispatchQueue.main.async {
                     self.cityAndCountryCodeLabel.text = "Simulated Location: \(locality), \(isoCountryCode)"
+                    self.gpsLatitudeLabel.text = "Latitude: \(gpsLatitude)"
+                    self.gpsLongitudeLabel.text = "Longitude: \(gpsLongitude)"
+                    self.gpsTimeStampLabel.text = "TimeStamp: \(gpsTimeStamp)"
+                    self.gpsRadiusOfUncertaintyHorizontalLabel.text = "Uncertainty (H) \(gpsRadiusOfUncertaintyHorizontal)"
+                    self.gpsRadiusOfUncertaintyVerticalLabel.text = "Uncertainty (V) \(gpsRadiusOfUncertaintyVertical)"
+                    self.gpsAltitudeLabel.text = "Altitude: \(gpsAltitude)"
+                    self.gpsLogicalFloorOfBuildingLabel.text = "Logical Floor: \(gpsLogicalFloorOfBuilding)"
                 }
             }
         }

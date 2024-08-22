@@ -20,7 +20,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let gpsAltitudeLabel = UILabel()
     let gpsLogicalFloorOfBuildingLabel = UILabel()
     
-    let gloatingLabel = UILabel()
+    // let gloatingLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,10 +64,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         gpsLogicalFloorOfBuildingLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsLogicalFloorOfBuildingLabel)
         
-        // set up gloatingLabel
+        /* set up gloatingLabel
         gloatingLabel.textAlignment = .center
         gloatingLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gloatingLabel)
+        */
         
         NSLayoutConstraint.activate([
             cityAndCountryCodeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -103,11 +104,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             gpsLogicalFloorOfBuildingLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             gpsLogicalFloorOfBuildingLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
 
+            /*
             gloatingLabel.topAnchor.constraint(equalTo: gpsLogicalFloorOfBuildingLabel.bottomAnchor, constant: 20),
             gloatingLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             gloatingLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
+            */
         ])
         
+        /*
         let messageText = "hehe yeah fuck Tim Apple"
         let attributedText = NSMutableAttributedString(string: messageText)
         if let range = messageText.range(of: "fuck") {
@@ -115,8 +119,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             attributedText.addAttribute(.font, value: UIFont.italicSystemFont(ofSize: gloatingLabel.font.pointSize), range: nsRange)
         }
         gloatingLabel.attributedText = attributedText
-        
-        gpsLatitudeLabel.text = "Latitude: 000000000000"
+        */
     }
     
     
@@ -141,14 +144,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 let gpsLogicalFloorOfBuilding = placemark.location?.floor ?? CLFloor()
                 
                 DispatchQueue.main.async {
-                    self.cityAndCountryCodeLabel.text = "Simulated Location: \(locality), \(isoCountryCode)"
+                    self.cityAndCountryCodeLabel.text = "Location: \(locality), \(isoCountryCode)"
                     self.gpsLatitudeLabel.text = "Latitude: \(gpsLatitude)"
                     self.gpsLongitudeLabel.text = "Longitude: \(gpsLongitude)"
                     self.gpsTimeStampLabel.text = "TimeStamp: \(gpsTimeStamp)"
                     self.gpsRadiusOfUncertaintyHorizontalLabel.text = "Uncertainty (H) \(gpsRadiusOfUncertaintyHorizontal)"
                     self.gpsRadiusOfUncertaintyVerticalLabel.text = "Uncertainty (V) \(gpsRadiusOfUncertaintyVertical)"
                     self.gpsAltitudeLabel.text = "Altitude: \(gpsAltitude)"
-                    self.gpsLogicalFloorOfBuildingLabel.text = "Logical Floor: \(gpsLogicalFloorOfBuilding)"
+                    // self.gpsLogicalFloorOfBuildingLabel.text = "Logical Floor: \(gpsLogicalFloorOfBuilding)"
                 }
             }
         }

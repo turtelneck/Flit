@@ -27,6 +27,10 @@
 		49892A202C5053DE0029ED41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49892A1F2C5053DE0029ED41 /* Assets.xcassets */; };
 		49892A232C5053DE0029ED41 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 49892A222C5053DE0029ED41 /* Base */; };
 		49892A2B2C5054110029ED41 /* Flit - Portsmouth, NH.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 49892A2A2C5054110029ED41 /* Flit - Portsmouth, NH.gpx */; };
+		498DB6022C842DCF004D689A /* Flit - Aarhus, Denmark.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 498DB6012C842DCF004D689A /* Flit - Aarhus, Denmark.gpx */; };
+		498DB6042C86A129004D689A /* Flit - Baltimore, MD.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 498DB6032C86A129004D689A /* Flit - Baltimore, MD.gpx */; };
+		499734702CC4198F005A3DB9 /* Flit - Boise, Idaho.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 4997346F2CC4198F005A3DB9 /* Flit - Boise, Idaho.gpx */; };
+		49ABB44B2C7D6B3C009E7AE3 /* Flit - Dubai, UAE.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 49ABB44A2C7D6B3C009E7AE3 /* Flit - Dubai, UAE.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		49892A222C5053DE0029ED41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49892A242C5053DE0029ED41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49892A2A2C5054110029ED41 /* Flit - Portsmouth, NH.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Portsmouth, NH.gpx"; sourceTree = "<group>"; };
+		498DB6012C842DCF004D689A /* Flit - Aarhus, Denmark.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Aarhus, Denmark.gpx"; sourceTree = "<group>"; };
+		498DB6032C86A129004D689A /* Flit - Baltimore, MD.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Baltimore, MD.gpx"; sourceTree = "<group>"; };
+		4997346F2CC4198F005A3DB9 /* Flit - Boise, Idaho.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Boise, Idaho.gpx"; sourceTree = "<group>"; };
+		49ABB44A2C7D6B3C009E7AE3 /* Flit - Dubai, UAE.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Flit - Dubai, UAE.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,9 @@
 		493029012C5D589500D84B2C /* GPX Files */ = {
 			isa = PBXGroup;
 			children = (
+				498DB6032C86A129004D689A /* Flit - Baltimore, MD.gpx */,
+				498DB6012C842DCF004D689A /* Flit - Aarhus, Denmark.gpx */,
+				49ABB44A2C7D6B3C009E7AE3 /* Flit - Dubai, UAE.gpx */,
 				493029082C655BAA00D84B2C /* Flit - Milan, Italy.gpx */,
 				4930290A2C698A5100D84B2C /* Flit - Bucharest, Romania.gpx */,
 				4930290C2C6AF78700D84B2C /* Flit - Wellington, NZ.gpx */,
@@ -82,6 +93,7 @@
 				49823AF02C50C52200EF369B /* Flit - Rio de Janeiro, Brazil.gpx */,
 				49823AF22C527D6A00EF369B /* Flit - Syracuse, NY.gpx */,
 				49823AF42C53108000EF369B /* Flit - Philadelphia, PA.gpx */,
+				4997346F2CC4198F005A3DB9 /* Flit - Boise, Idaho.gpx */,
 			);
 			path = "GPX Files";
 			sourceTree = "<group>";
@@ -177,13 +189,17 @@
 			files = (
 				493029092C655BAA00D84B2C /* Flit - Milan, Italy.gpx in Resources */,
 				4930290B2C698A5100D84B2C /* Flit - Bucharest, Romania.gpx in Resources */,
+				49ABB44B2C7D6B3C009E7AE3 /* Flit - Dubai, UAE.gpx in Resources */,
 				493489682C6D92F300F2B84B /* Flit - Istanbul, Turkey.gpx in Resources */,
 				49892A2B2C5054110029ED41 /* Flit - Portsmouth, NH.gpx in Resources */,
+				498DB6042C86A129004D689A /* Flit - Baltimore, MD.gpx in Resources */,
 				49892A202C5053DE0029ED41 /* Assets.xcassets in Resources */,
+				498DB6022C842DCF004D689A /* Flit - Aarhus, Denmark.gpx in Resources */,
 				49823AF72C551E9500EF369B /* Flit - Mumbai, India.gpx in Resources */,
 				49823AF32C527D6A00EF369B /* Flit - Syracuse, NY.gpx in Resources */,
 				49823AF12C50C52200EF369B /* Flit - Rio de Janeiro, Brazil.gpx in Resources */,
 				49892A232C5053DE0029ED41 /* Base in Resources */,
+				499734702CC4198F005A3DB9 /* Flit - Boise, Idaho.gpx in Resources */,
 				49892A1E2C5053DD0029ED41 /* Base in Resources */,
 				4930290D2C6AF78700D84B2C /* Flit - Wellington, NZ.gpx in Resources */,
 				493029072C631E3A00D84B2C /* Flit - Stockholm, Sweden.gpx in Resources */,

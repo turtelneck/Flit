@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -123,8 +124,51 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
+    func calculateDirections(to destination: CLLocationCoordinate2D) {
+        // source, destination, MKMapItem, MKDirectionsRequest
+        let request = MKDirections.Request()
+        let source = MKMapItem.forCurrentLocation()
+        let destinationPlacemark = MKPlacemark(coordinate: destination)
+        let destinationItem = MKMapItem(placemark: destinationPlacemark)
+        request.source = source
+        request.destination = destinationItem
+        request.transportType = .automobile
+        
+        let directions = MKDirections(request: request)
+        directions.calculate { (response: MKDirections.Response?, error: Error?) in
+            if let error = error {
+                print("Error calculating directions: \(error)")
+                return
+            }
+            
+            guard let response = response else {
+                print("No directions found")
+                return
+            }
+            
+            // Handling the first route in the response
+            if let route = response.routes.first {
+                print("Rounte name: \(route.name)")
+                print("Distance: \(route.distance) meters")
+                print("Expected travel time: \(route.expectedTravelTime) seconds")
+                
+                // Loop through each step in the route
+                var stepCount = 1
+                for step in route.steps {
+                    print("\(stepCount): \(step.instructions)")
+                    print("    Distance: \(step.distance) meters")
+                    stepCount += 1
+                }
+            }
+        }
+    }
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
+        
+        // Create CLLocationCoordinate2D for later use
+        let destinationCoordinates = CLLocationCoordinate2D(latitude: 36.07237298738563, longitude: -94.00386585452026)
             
         // Reverse geocode to get the location name
         let geocoder = CLGeocoder()
@@ -151,11 +195,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     self.gpsRadiusOfUncertaintyHorizontalLabel.text = "Uncertainty (H) \(gpsRadiusOfUncertaintyHorizontal)"
                     self.gpsRadiusOfUncertaintyVerticalLabel.text = "Uncertainty (V) \(gpsRadiusOfUncertaintyVertical)"
                     self.gpsAltitudeLabel.text = "Altitude: \(gpsAltitude)"
-                    // self.gpsLogicalFloorOfBuildingLabel.text = "Logical Floor: \(gpsLogicalFloorOfBuilding)"
+                    self.gpsLogicalFloorOfBuildingLabel.text = "Logical Floor: \(gpsLogicalFloorOfBuilding.level)"
                 }
             }
         }
+        
+        calculateDirections(to: destinationCoordinates)
     }
-    
 }
 

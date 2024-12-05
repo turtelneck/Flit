@@ -21,7 +21,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let gpsAltitudeLabel = UILabel()
     let gpsLogicalFloorOfBuildingLabel = UILabel()
     
-    // let gloatingLabel = UILabel()
+    let gloatingLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,11 +65,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         gpsLogicalFloorOfBuildingLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gpsLogicalFloorOfBuildingLabel)
         
-        /* set up gloatingLabel
+        // set up gloatingLabel
         gloatingLabel.textAlignment = .center
         gloatingLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(gloatingLabel)
-        */
+        
         
         NSLayoutConstraint.activate([
             cityAndCountryCodeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -104,15 +104,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             gpsLogicalFloorOfBuildingLabel.topAnchor.constraint(equalTo: gpsAltitudeLabel.bottomAnchor, constant: 1),
             gpsLogicalFloorOfBuildingLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             gpsLogicalFloorOfBuildingLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-
-            /*
             gloatingLabel.topAnchor.constraint(equalTo: gpsLogicalFloorOfBuildingLabel.bottomAnchor, constant: 20),
             gloatingLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             gloatingLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
-            */
+            
         ])
         
-        /*
+        
         let messageText = "hehe yeah fuck Tim Apple"
         let attributedText = NSMutableAttributedString(string: messageText)
         if let range = messageText.range(of: "fuck") {
@@ -120,7 +118,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             attributedText.addAttribute(.font, value: UIFont.italicSystemFont(ofSize: gloatingLabel.font.pointSize), range: nsRange)
         }
         gloatingLabel.attributedText = attributedText
-        */
+        
     }
     
     
